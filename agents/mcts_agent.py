@@ -272,7 +272,7 @@ class StudentAgent(Agent):
 
     time_taken = time.time() - start_time
 
-    print("MCTS Agent's turn took ", time_taken, "seconds.")
+    #print("MCTS Agent's turn took ", time_taken, "seconds.")
 
     return best_move
 

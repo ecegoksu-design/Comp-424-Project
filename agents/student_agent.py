@@ -6,12 +6,18 @@ import numpy as np
 import time
 from helpers import random_move, execute_move, check_endgame, get_valid_moves, MoveCoordinates
 
-@register_agent("random_agent")
-class RandomAgent(Agent):
+@register_agent("student_agent")
+class StudentAgent(Agent):
+    """
+    FINAL VERSION
+
+    Ataxx Agent using Alpha-Beta Pruning with iterative deepening
+    and a comprehensive evaluation function.
+    """
 
     def __init__(self):
-        super(RandomAgent, self).__init__()
-        self.name = "RandomAgent"
+        super(StudentAgent, self).__init__()
+        self.name = "StudentAgent"
         self.root_player = None
         self.time_limit = 1.9 
         
